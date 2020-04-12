@@ -1,0 +1,76 @@
+baseurl = "https://example.com"
+languageCode = "en"
+title = "Oscar and The Machines"
+theme = "kiss"
+copyright = """
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> \
+        <img alt="Creative Commons Licence" style="border-width:0" \
+        src="https://i.creativecommons.org/l/by/4.0/88x31.png" /> \
+    </a>\
+    <br/>This work is licensed under a \
+    <a rel="license" \
+        href="http://creativecommons.org/licenses/by/4.0/"> \
+        Creative Commons 4.0 Licence\
+    </a>."""
+disqusShortname = ""
+googleAnalytics = ""
+Paginate = 10 # Number of posts per page
+enableRobotsTXT = true
+
+[params.rss] # Adding this tag enables RSS feed
+includeContent = true # Includes whole content in rss
+authorName = "Oscar and The Machines" # Author full name
+authorEmail = "oscar@gmail.com" # Author email
+
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.info]
+homeTitle = "Oscar and The Machines" # Title for home page
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = true # Adds OpenGraph and Twitter cards
+poweredby = true # Adds powered by hugo and kiss below Copyright
+related = true # Includes related articles at the bottom of the article
+codeCopy = true # Add copy button above code blocks
+taxonomiesCount = true # Add taxonomies count
+
+[params.features]
+disqusOnDemand = false  # Load Disqus comments on click
+
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = "" # Twitter Page username. If not set, params.social.twitter will be used.
+
+[params.social]
+twitter = "ribicemir"
+github = "oscarpfernandez"
+email = "oscar@gmail.com"
+linkedin = "oscarpl"
+facebook = ""
+instagram = ""
+codepen = ""
+rss = "index.xml" # Add this to show RSS button in social.
+
+[params.social.config]
+platforms = ["github","email","linkedin", "rss"]
+
+[params.matomoAnalytics]
+siteID = 1
+rootURL = "//matomo.example.com/"
+
+[params.fathomAnalytics]
+rootURL = "//fathom.example.com/"
+
+[params.sections_right]
+"/sections/about" = "About"
+
+[taxonomies]
+tag ="tags"
+
+[blackfriday]
+hrefTargetBlank = true
