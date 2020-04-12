@@ -1,6 +1,10 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = """hugo --minify \
+                  --source . \
+                  --config config.toml \
+                  --themesDir themes \
+                  --baseURL https://oscarfernandez.netlify.com"""
 
 [context.production.environment]
 HUGO_VERSION = "0.68.3"
